@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schedule Table</title>
+ <STYLE>body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input {
+    margin-right: 10px;
+  }
+  
+  button {
+    margin-left: 105px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: rebeccapurple;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: lightgray;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  </STYLE>
+</head>
+<body>
+  <h1>Schedule Table</h1>
+  <div class="container">
+    <form id="apiForm">
+      <label for="sealine">Sealine:</label>
+      <input type="text" id="sealine" value="CMDU"><br>
+  
+      <label for="portcode">Port Code:</label>
+      <input type="text" id="portcode" value="UAODS"><br>
+  
+      <label for="portdestinationcode">Port Destination Code:</label>
+      <input type="text" id="portdestinationcode" value="TRGEM"><br>
+  
+      <label for="fromdate">From Date:</label>
+      <input type="text" id="fromdate" value="09-09-2023"><br>
+  
+      <button type="submit">Fetch Schedule</button>
+    </form>
+  </div>
+
+  <table id="scheduleTable">
+    <!-- Table data will be populated here -->
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
